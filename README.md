@@ -4,8 +4,8 @@ You can see info of each players, each matches, maximum runs in IPL, maximum ave
  
 ## Performance
 Site performed on Google PageSpeed Insights:
-![image](https://photos.app.goo.gl/v8BAcw4AcKhePG2p9)
-![image](https://photos.app.goo.gl/GTT7iXZETnyejgbV8)
+![image](https://github.com/shivam1192/atlan-IPL-discover/blob/master/1.jpeg)
+![image](https://github.com/shivam1192/atlan-IPL-discover/blob/master/2.jpeg)
 I used react lazy and Suspense to reduce page loading time.
 I am using low res images and a fast API that fetches data at about speeds of 210ms.
 
