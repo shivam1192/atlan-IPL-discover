@@ -1,9 +1,9 @@
-import React from 'react'
+import React,{lazy,Suspense} from 'react'
 import NavbarFun from './Components/NavbarComp'
 import './index.css';
-import PlayerInfo from './Components/PlayersInfo';
-import TeamWiseStatistic from './Components/TeamWiseStatistic';
-import MatchesInfo from './Components/MatchesInfo';
+const TeamWiseStatistic = React.lazy(() => import('./Components/TeamWiseStatistic'));
+const PlayerInfo = React.lazy(() => import('./Components/MatchesInfo'));
+const MatchesInfo = React.lazy(() => import('./Components/PlayersInfo'));
 import HomePage from './Components/HomePage';
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import TeamDataContextProvider from './Context/TeamStatisticDataContext';
@@ -17,8 +17,9 @@ function App() {
       <TeamDataContextProvider>
         <MatchesDataContextProvider>
           <PlayerDataContextProvider>
+          <Suspense fallback={<div>Loading...</div>}>
         <BrowserRouter>
-        <NavbarFun/><br/>
+         <NavbarFun/><br/><br/>
         <Switch>
                 <Route path="/" component={HomePage} exact />
                 <Route path="/playersinfo" component={PlayerInfo} exact />
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/matchesinformation" component={MatchesInfo} />
         </Switch>
         </BrowserRouter>
+        </Suspense>
         </PlayerDataContextProvider>
         </MatchesDataContextProvider>
       </TeamDataContextProvider>
