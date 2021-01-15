@@ -13,11 +13,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 const TableComponent = (props) =>{
   const classes = useStyles();
-    const {Playerdata,setPlayerData} = useContext(PlayerDataContext)
-    console.log(props.rows)
-    Playerdata.map(function (element) {
-        element.id = Math.random();
-      });
     return(
         <>
         <Container style={{color:'white'}}>
