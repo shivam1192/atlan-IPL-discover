@@ -17,7 +17,7 @@ function App() {
       <TeamDataContextProvider>
         <MatchesDataContextProvider>
           <PlayerDataContextProvider>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div style={{color:'white'}}>Loading...</div>}>
         <BrowserRouter>
          <NavbarFun/><br/><br/>
         <Switch>
