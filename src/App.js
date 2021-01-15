@@ -2,8 +2,8 @@ import React,{lazy,Suspense} from 'react'
 import NavbarFun from './Components/NavbarComp'
 import './index.css';
 const TeamWiseStatistic = React.lazy(() => import('./Components/TeamWiseStatistic'));
-const PlayerInfo = React.lazy(() => import('./Components/MatchesInfo'));
-const MatchesInfo = React.lazy(() => import('./Components/PlayersInfo'));
+const MatchesInfo  = React.lazy(() => import('./Components/MatchesInfo'));
+const PlayerInfo = React.lazy(() => import('./Components/PlayersInfo'));
 import HomePage from './Components/HomePage';
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import TeamDataContextProvider from './Context/TeamStatisticDataContext';
