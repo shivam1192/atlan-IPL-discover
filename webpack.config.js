@@ -4,9 +4,8 @@ const {CleanWebpackPlugin}  = require('clean-webpack-plugin')
 module.exports = {
     entry : "./src/index.js",
     output : {
-        filename : 'main.[contenthash].js',
-        path : path.resolve(__dirname,'dist'),
-        publicPath: '/'
+        path: path.resolve('./build'),
+    filename: 'bundle.js'
     },
     resolve: {
         extensions: ['.js', '.jsx']
