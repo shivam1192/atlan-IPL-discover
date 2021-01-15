@@ -6,12 +6,12 @@ const MatchesDataContextProvider = (props) => {
     const [Matchesdata,setMatchesData] = useState([])
     useEffect(()=>{
         const fun = async() => {
-            fetch("https://jsonkeeper.com/b/91U3")
+            fetch("https://api.npoint.io/203e966095ade69aedd3")
             .then(response => response.json())
             .then(datas => setMatchesData(datas));
         }
         fun()
-    })
+    },[])
 
     return ( 
         <MatchesDataContext.Provider value={{Matchesdata,setMatchesData:setMatchesData}}>

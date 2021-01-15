@@ -42,13 +42,13 @@ const MatchesInfo = () =>{
              <div className={classes.root}>
                 <Grid container direction="row" spacing={6} >
                 <Grid item md={4} xs={12} onClick={helloworld1}>
-                  <Paper className={classes.paper}><span className={classes.text2}>Players<br/>Information</span></Paper>
+                  <Paper className={classes.paper} style={{cursor:'pointer'}}><span className={classes.text2}>Players<br/>Information</span></Paper>
                   </Grid>
                   <Grid item md={4} xs={12} onClick={helloworld2}>
-                  <Paper className={classes.paper}><span className={classes.text2}>TeamWise<br/>Statistic</span></Paper>
+                  <Paper className={classes.paper} style={{cursor:'pointer'}}><span className={classes.text2}>TeamWise<br/>Statistic</span></Paper>
                   </Grid>
                   <Grid item md={4} xs={12} onClick={helloworld3}>
-                  <Paper className={classes.paper}><span className={classes.text2}>Matches<br/>Information</span></Paper>
+                  <Paper className={classes.paper} style={{cursor:'pointer'}}><span className={classes.text2}>Matches<br/>Information</span></Paper>
                   </Grid>
                   </Grid>
             </div>

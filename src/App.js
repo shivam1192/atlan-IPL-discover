@@ -17,8 +17,8 @@ function App() {
       <TeamDataContextProvider>
         <MatchesDataContextProvider>
           <PlayerDataContextProvider>
-      <NavbarFun/><br/>
         <BrowserRouter>
+        <NavbarFun/><br/>
         <Switch>
                 <Route path="/" component={HomePage} exact />
                 <Route path="/playersinfo" component={PlayerInfo} exact />
